@@ -1,0 +1,19 @@
+# Compiled Java output (produced by: javac -d out ...)
+out/
+*.class
+
+# Ignore all MIDI files except the examples
+*.mid
+!examples/*.mid
+
+# IDE / editor
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS junk
+.DS_Store
+Thumbs.db
