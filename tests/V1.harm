@@ -1,0 +1,21 @@
+// Coverage: melody_decl, play_stmt (melody + phrase form), note_stmt,
+//           tempo_stmt, volume_stmt, pitch (IDENT & NOTE_LIT),
+//           all durations, phrase type (literal + indexing)
+phrase mainTheme = [C4 quarter, E4 half, G4 eighth];
+event firstEvent = mainTheme[0];   // indexing a phrase yields an event
+event lastEvent  = mainTheme[2];
+note rootNote = G3;
+ 
+ 
+melody Sonata(note start, int velocity) {
+    tempo 140;
+    volume velocity;
+    note start whole;
+    note D4 half;
+    note E4 quarter;
+    note F#4 eighth;
+    note rootNote quarter;          // IDENT used as pitch
+}
+ 
+play Sonata(C4, 100);               // melody form: play f(args);
+play mainTheme;                     // phrase form: play x;  (no parens)

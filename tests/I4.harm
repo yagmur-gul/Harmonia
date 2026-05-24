@@ -1,0 +1,3 @@
+melody IncompleteNote() {
+    note C4;          // missing duration
+}

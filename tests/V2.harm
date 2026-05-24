@@ -1,0 +1,25 @@
+// Coverage: func_decl, if_stmt (with else + nested if), return_stmt,
+//           assignment, relational/logic/math ops, unary (! and -),
+//           float/bool types, int->float coercion
+func bool validatePerformance(float threshold, int score) {
+    float margin = -5.5;   // unary minus
+    bool result = !false;  // unary not
+    if (score * 2 / 10 + 5) > threshold && result || (1 == 1) {
+        return true;
+    } else {
+        if score != 0 {
+            score = 0;     // assignment statement
+        }
+        return false;
+    }
+}
+ 
+melody Verdict(bool ok) {            // surfaces the boolean result audibly
+    tempo 100;
+    volume 80;
+    note C5 whole;
+}
+ 
+int globalScore = 50;
+bool isValid = validatePerformance(45.0, globalScore);
+play Verdict(isValid);

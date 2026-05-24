@@ -1,0 +1,4 @@
+melody int MySong() {  // 'int' return type not allowed for a melody
+    note A4 whole;
+    return 1;
+}

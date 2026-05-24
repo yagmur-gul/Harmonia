@@ -1,0 +1,4 @@
+int x = 10;
+if x == 10 {          // if_stmt is not a top_level_decl
+    play Tune();
+}

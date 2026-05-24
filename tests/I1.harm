@@ -1,0 +1,5 @@
+melody LoopMissing() {
+    repeat 4 {        // missing the keyword "times"
+        note C4 half;
+    }
+}

@@ -1,0 +1,5 @@
+func bool check() {
+    int y = 0;
+    int x = (y = 5);  // assignment is not an expression
+    return true;
+}

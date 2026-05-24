@@ -1,0 +1,21 @@
+// Coverage: repeat_stmt, transpose_stmt, nested blocks,
+//           top-level var_decl, nested parens, nested call in arg_list
+int iterations = 4;
+ 
+melody complexPiece(int shift) {
+    transpose (12 - shift) {
+        repeat iterations times {
+            {
+                // nested block test
+                volume 90;
+                note A3 half;
+            }
+        }
+    }
+}
+ 
+func int calculate(int a) {
+    return a;
+}
+ 
+play complexPiece(calculate(1 + (2 * 3)));
