@@ -6,9 +6,7 @@ checker, and a tree-walking interpreter. A program can be executed to produce
 music through three outputs: a console performance trace, live audio via the
 JVM's built-in MIDI synthesizer, and an optional Standard MIDI File (`.mid`).
 
-> Built for CSE 341 (Programming Language Concepts). Part 1 delivered the lexer,
-> parser, and an AST pretty-printer (`--dump-ast`); Part 2 added the static type
-> checker (`--check`) and the interpreter.
+> Built for Programming Language Concepts course
 
 ## Requirements
 
